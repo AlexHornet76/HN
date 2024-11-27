@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #AFDDE5;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003135;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #003135;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+#match-details, .team-section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #0FA4AF;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    color: #AFDDE5;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    padding: 10px;
+    border: 1px solid #0FA4AF;
+    border-radius: 4px;
+    background-color: #AFDDE5;
+    color: #003135;
+    font-size: 1em;
+}
+
+.team-sections {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.team-section {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid #0FA4AF;
+    border-radius: 8px;
+    background-color: #964734;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    width: calc(50% - 40px); /* Ensure consistent width */
+}
+
+#home_team_players, #away_team_players {
+    margin-top: 20px;
+    background-color: #AFDDE5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.player-item {
+    background-color: #0FA4AF;
+    padding: 8px; /* Padding compact */
+    margin-bottom: 8px; /* Space between player cards */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    color: white; /* White text */
+    font-size: 0.85em; /* Smaller font size */
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.player-item p {
+    margin: 0;
+    margin-right: 10px; /* Space between name and stats */
+    flex: 1; /* Allow name to take remaining space */
+}
+
+.player-stats {
+    display: flex;
+    gap: 5px; /* Space between elements */
+    justify-content: space-between; /* Distribute elements evenly */
+    flex: 3; /* Allow stats to take remaining space */
+}
+
+.stat-item {
+    display: flex;
+    align-items: center; /* Align label and input vertically */
+    flex: 1; /* Allow items to grow and fill the space */
+    min-width: 120px; /* Minimum width for layout */
+}
+
+.player-stats label {
+    width: 50px; /* Fixed width for label */
+    font-size: 0.85em; /* Smaller font size */
+    margin-right: 5px; /* Space between label and input */
+    text-align: right; /* Right align label */
+}
+
+.player-stats input {
+    width: 50px; /* Set a fixed width for the input */
+    padding: 5px; /* Internal padding */
+    border: 1px solid #003135; /* Thin border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #AFDDE5; /* Light background */
+    color: #003135; /* Dark text */
+    font-size: 0.85em; /* Smaller font size */
+}
+
+.submit-section {
+    text-align: center;
+}
+
+.submit-section input {
+    background-color: #0FA4AF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-section input:hover {
+    background-color: #964734;
+}
