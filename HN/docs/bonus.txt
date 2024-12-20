@@ -1,0 +1,9 @@
+explode('param','$url)
+returneaza array[n]
+
+$url = file_get_contents($url)
+
+Filme -> imdb => top 100 Filme
+functie care primeste care parametrii nota_inf -> nota_sup si returneaza filme(titlu)
+care au nota cuprinsa ...
+

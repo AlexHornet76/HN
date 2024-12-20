@@ -1,0 +1,153 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #003135;
+    color: #AFDDE5;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+    padding: 15px;
+    background-color: #0FA4AF;
+    margin: 0;
+    color: white;
+    font-size: 1.5em;
+}
+.container {
+    
+    max-width: 50%;
+    margin: 10px 0;
+    margin-left: 50px;
+    background-color: #AFDDE5;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+.match {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    background-color: #964734;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    color: white;
+}
+.team-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 0;
+}
+.team-name {
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    transition: font-size 0.3s ease;
+}
+.team-name:hover {
+    color: #AFDDE5;
+    font-size: 1.1em;
+}
+.score {
+    font-size: 1em;
+    background-color: #0FA4AF;
+    color: #003135;
+    padding: 3px 8px;
+    border-radius: 3px;
+    text-align: center;
+    width: 40px;
+    font-weight: bold;
+}
+.date {
+    font-size: 0.85em;
+    color: #AFDDE5;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.create-match-button {
+    position: fixed; /* Poziționează butonul fix */
+    top: 10%; /* Ajustează distanța de sus */
+    right: 18.5%; /* Ajustează distanța de la dreapta */
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #0FA4AF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 10; /* Asigură-te că butonul este deasupra imaginii */
+}
+
+.create-match-button:hover {
+    background-color: #007B8A;
+}
+
+.button-container {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+.delete-form{
+    margin: 0 5px;
+    padding: 0;
+}
+.delete-button {
+    background-color: #007B8A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    height: 25px;
+}
+
+.edit-button{
+    margin:none;
+    background-color: #007B8A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+    height: 25px;
+}
+
+.delete-button:hover,.edit-button:hover {
+    background-color: #003135;
+}
+
+
+
+.logo {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.message{
+    position: absolute;
+    top:62%;
+    right:18%;
+    text-align: center;
+    max-width: 150px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
